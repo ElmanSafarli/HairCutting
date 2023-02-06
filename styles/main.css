@@ -1,0 +1,656 @@
+@font-face {
+    font-family: 'PAG';
+    src: url('./fonts/PAG\ Revolucion\ W00\ Regular.ttf');
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#home{
+    background: linear-gradient( rgba(51, 49, 49, 0.8), rgba(0, 0, 0, 0.5) ), url('../assets/header-bg.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+/* Navbar Section */
+.logo img{
+    width: 130px;
+}
+.nav-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 25px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-items ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;    
+    padding: 10px 10px 0 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 500;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+.nav-items ul li a:hover{
+    color: #da852b;
+}
+
+.nav-btn button{
+    background-color: #da852b;
+    border: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+}
+.nav-btn button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header Section */
+.header{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+.header-content{
+    position: relative;
+    top: 25%;
+}
+.header-title{
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding: 0 0 20px 0;
+    color: #fff;
+    font-family: 'PAG';
+    letter-spacing: .2rem;
+}
+.header-subtitle{
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 0 0 40px 0;
+    color: #fff;
+}
+.header-btn button{
+    border: none;
+    background-color: #da852b;
+    color: #fff;
+    font-weight: 900;
+    width: 150px;
+    height: 50px;
+}
+.header-btn button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Services Section */
+#service{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.service-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+    padding: 80px 0 80px 0;
+}
+.service-box{
+    width: 220px;
+    height: 330px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.service-box-title{
+    font-weight: 900;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 0 0 10px 0;
+}
+.service-box-subtitle{
+    color: #c2c2c2;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0 10px 0 10px;
+}
+.service-box-icon img{
+    width: 100px;
+    height: 50px;
+    height: auto;
+    padding: 20px 0 10px 0;
+    margin-top: 20px;
+}
+
+/* About Section */
+.about{
+    display: flex;
+    height: 100vh;
+    background: linear-gradient( rgba(51, 49, 49, 0.8), rgba(0, 0, 0, 0.5) ), url('../assets/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.about1{
+    width: 290px;
+    height: 450px;
+    position: relative;
+    top: 20%;
+}
+.about2{
+    width: 380px;
+    height: 450px;
+    position: relative;
+    top: 20%;
+    left: 40px;
+}
+.content-about{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.content-about span{
+    color: #da852b;
+}
+.content-about-title{
+    font-size: 2.4rem;
+    font-family: 'PAG';
+    color: #fff;
+}
+.content-about-subtitle{
+    font-size: 1rem;
+    padding: 20px 0 20px 0;
+    color: #fff;
+}
+.content-about-btn button{
+    background-color: #da852b;
+    border: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+    width: 180px;
+    height: 50px; 
+}
+
+/* Info Section */
+.info{
+    position: relative;
+    height: 100vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10%;
+    background-color: #f1e8e0;
+}
+.left-info{
+    background: linear-gradient( rgba(51, 49, 49, 0.2), rgba(0, 0, 0, 0.2) ), url('../assets/info.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'PAG';
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 15%;
+    height: 400px;
+}
+.info-span{
+    color: #da852b;
+    font-family: 'PAG';
+}
+.info-title{
+    color: #000;
+    font-family: 'PAG';
+    font-size: 2.5rem;
+}
+.info-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 15px;
+}
+.right-info{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.info-time-span{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(188, 180, 180);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.info-hour span{
+    color: red;
+    font-weight: 600;
+}
+.contact-info{
+    background: url('../assets/ci-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    margin-right: 60%;
+}
+.cit{
+    background-color: #fff;
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 1rem;
+    font-family: 'PAG';
+}
+.contact-mail-info a{
+    color: #000;
+    font-size: 1rem;
+    font-family: 'PAG';
+    text-decoration: none;
+}
+.fa-solid{
+    font-size: 1rem;
+    color: #da852b;
+    padding-right: 10px;
+}
+
+/* Team Section */
+.team{
+    position: relative;
+    height: 100vh;
+}
+.team-title{
+    color: #000;
+    font-family: 'PAG';
+    font-size: 2.6rem;
+    margin-top: 10%;
+}
+.team-subtitle{
+    color: #da852b;
+    font-size: 1rem;
+}
+.team-span .fa-scissors{
+    transform: rotate(-90deg);
+    color: #666666;
+}
+.hic{
+    width: 260px;
+    
+}
+.hairdresser{
+    width: 260px;
+    height: 240px;
+}
+.hairdresser-name{
+    padding-right: 45px;
+    padding-top: 10px;
+    font-size: 1.8rem;
+    font-family: 'PAG';
+    float: left;
+    color: #fff;
+    width: 260px;
+    background-color: #212121;
+}
+.hairdresser-position{
+    float: left !important;
+    color: #fff;
+    width: 260px;
+    font-size: 0.8rem;
+    background-color: #212121;
+}
+.hairdressers-block{
+    padding-left: 15%;
+    padding-right: 8%;
+}
+
+/* Gallery Section */
+.gallery-content{
+    margin-top: 15%;
+}
+.gallery-title{
+    text-align: center;
+    color: #000;
+    font-family: 'PAG';
+    font-size: 2.6rem;
+}
+.gallery-subtitle{
+    color: #da852b;
+    font-size: 1rem;
+    text-align: center;
+}
+.gallery-span .fa-scissors{
+    color: #666666;
+    transform: rotate(-90deg);
+}
+
+/* Mail Section */
+.mail{
+    height: 100vh;
+}
+.mail-content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+.mail-right{
+    width: 400px;
+    border: 10px solid #da852b;
+    height: 450px;
+    position: relative;
+    right: 120px;
+    top: 40px;
+}
+.mail-left-title{
+    color: #000;
+    font-size: 2.6rem;
+    font-family: 'PAG';
+}
+.mail-left-title span{
+    color: #da852b;
+}
+.form-mail-items{
+    margin: 0 0 20px 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.form-label{
+    display: block;
+    margin: 0 0 10px 0;
+}
+.form-input{
+    height: 50px;
+    padding: 0 20px;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid rgb(181, 179, 179);
+}
+.mail-btn button{
+    background-color: #da852b;
+    border: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+    width: 180px;
+    height: 50px; 
+}
+.fmi{
+    height: 120px;
+}
+.time-info{
+    margin: 10% 10% 5% 20%;
+}
+.time-info-call-span{
+    color: #da852b;
+    font-family: 'PAG';
+    font-size: 0.9rem;
+}
+.time-info-title{
+    color: #000;
+    font-family: 'PAG';
+    font-size: 2.5rem;
+}
+
+/* Footer Logo */
+#footer{
+    height: 50vh;
+    background-color: #212121;
+}
+.footer-logo img{
+    width: 100px;
+}
+.footer-text{
+    color: #666666;
+}
+.footer-content{
+    margin-left: 10%;
+    padding-top: 5%;
+}
+.footer-links{
+    font-size: 2.2rem;
+    font-family: 'PAG';
+    color: #fff;
+}
+.footer-list li{
+    list-style: none;
+    color: #fff;
+}
+.footer-list li::before{
+    content: "\00BB";
+    padding-right: 5px;
+    color: #fff;
+}
+.footer-contact{
+    font-size: 2.5rem;
+    font-family: 'PAG';
+    color: #fff;
+}
+.footer-phone span{
+    color: #da852b;
+}
+.footer-mail span{
+    color: #da852b;
+}
+.footer-phone{
+    color: #fff;
+}
+.footer-mail{
+    color: #fff;
+}
+.footer-location{
+    color: #fff;
+}
+/* Sidebar */
+#menu{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    color: #fff;
+    background: #da852b;
+    z-index: 1001;
+    padding: 0.9rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    display: none;
+}
+.action-menu{
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    display: none;
+    width: 260px;
+    height: 100vh;
+    background: grey;
+    transition: all 700ms;
+    margin-left: 5%;
+    padding-top: 15%;
+}
+.active{
+    right: 0px;
+}
+.action-menu ul li{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    list-style: none;
+    transition: 0.9s;
+}
+
+.action-menu ul li a{
+    padding-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+.action-menu ul li:hover{
+    transform: translate(20px,0);
+}
+.nav-btn-menu button{
+    margin-left: 10%;
+    background-color: #da852b;
+    border: none;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+    width: 180px;
+    height: 50px;
+}
+.nav-btn-menu button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width:991px){
+    #footer{
+        height: 100vh;
+    }
+    .cit{
+        width: 500px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .about1{
+        display: none;
+    }
+    #service{
+        height: 230vh !important;
+    }
+    .service-box{
+        width: 100%;
+    }
+    #menu{
+        display: block;
+    }
+    nav ul li{
+        display: none;
+    }
+    nav ul li a{
+        display: none;
+    }
+    .action-menu{
+        display: inline-block;
+    }
+    .nav-btn button{
+        display: none;
+    }
+}
+
+@media (max-width:1500px){
+    #service{
+        height: 110vh;
+    }
+    .about1{
+        width: 190px;
+        height: 350px;
+    }
+    .about2{
+        width: 280px;
+        height: 350px;
+    }
+}
+
+@media (max-width:1240px){
+    .about2{
+        display: none;
+    }
+    .gallery-content{
+        margin-top: 25%;
+    }
+}
+
+@media (max-width:1100px){
+    .mail-content{
+        display: block;
+    }
+    .mail-right{
+        position: relative;
+        right: 0;
+        top: 40px;
+    }
+    .mail{
+        height: 160vh;
+    }
+    .gallery-content{
+        margin-top: 100%;
+    }
+}
+
+@media (max-width:800px){
+    .info-hour{
+        position: relative;
+        left: 50px;
+    }
+    .cit{
+        width: 300px;
+    }
+    .gallery{
+        margin-top: 110%;
+        height: 200vh;
+    }
+    .hairdressers-block{
+        margin-left: 100px !important;
+    }
+}
+@media (max-width:700px){
+    .gallery-content{
+        margin-top: 125%;
+    }
+}
+@media (max-width:680px){
+    .gallery-content{
+        margin-top: 155%;
+    }
+}
+@media (max-width:520px){
+    .gallery-content{
+        margin-top: 175%;
+    }
+}
+@media (max-width:415px){
+    .gallery-content{
+        margin-top: 255%;
+    }
+    .mail-right{
+        width: 300px;
+        height: 550px;
+    }
+    .footer-content{
+        margin-top: 40%;
+    }
+}
