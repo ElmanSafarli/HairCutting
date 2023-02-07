@@ -119,7 +119,7 @@ body{
 }
 .service-box{
     width: 220px;
-    height: 330px;
+    height: 350px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     margin: auto;
     text-align: center;
@@ -470,6 +470,11 @@ body{
 .footer-location{
     color: #fff;
 }
+
+/* Map Location */
+.map-location{
+    width: 100%;
+}
 /* Sidebar */
 #menu{
     position: fixed;
@@ -549,7 +554,7 @@ body{
         display: none;
     }
     #service{
-        height: 230vh !important;
+        height: 250vh !important;
     }
     .service-box{
         width: 100%;
@@ -573,7 +578,7 @@ body{
 
 @media (max-width:1500px){
     #service{
-        height: 110vh;
+        height: 210vh;
     }
     .about1{
         width: 190px;
@@ -583,14 +588,20 @@ body{
         width: 280px;
         height: 350px;
     }
+    .woman-sevice{
+        margin-top: 50% !important;
+    }
 }
 
-@media (max-width:1240px){
+@media (max-width:1290px){
     .about2{
         display: none;
     }
     .gallery-content{
         margin-top: 25%;
+    }
+    #service{
+        height: 320vh !important;
     }
 }
 
@@ -609,8 +620,22 @@ body{
     .gallery-content{
         margin-top: 100%;
     }
+    
 }
 
+@media (max-width:992px){
+    .woman-sevice{
+        margin-top: 150% !important;
+    }
+    #service{
+        height: 510vh !important;
+    }
+}
+@media (max-width:900px){
+    #service{
+        height: 450vh !important;
+    }
+}
 @media (max-width:800px){
     .info-hour{
         position: relative;
@@ -652,5 +677,14 @@ body{
     }
     .footer-content{
         margin-top: 40%;
+    }
+    #service{
+        height: 500vh !important;
+    }
+    .woman-sevice{
+        margin-top: 450% !important;
+    }
+    .map-location{
+        margin-top: 50%;
     }
 }
